@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "AlfredinoSemirounded";
+  src: url("/fonts/alfredinosemirounded-semirounded.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AlfredinoTuttocurvy";
+  src: url("/fonts/alfredinotuttocurvy-tuttocurvy.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AlfredinoSemimono";
+  src: url("/fonts/trialalfredinosemimono-semimono.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Variable.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SatoshiItalic";
+  src: url("/fonts/Satoshi-VariableItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

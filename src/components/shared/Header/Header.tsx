@@ -5,9 +5,9 @@ export const Header = () => {
     <>
       <header>
         <nav className="">
-          <ul className="flex flex-row justify-center gap-10 p-5 text-raisin-black font-bold font-satoshi text-lg bg-bone h-full w-full">
+          <ul className="flex flex-row justify-center gap-10 p-5 text-raisin-black font-satoshi text-lg bg-bone h-full w-full">
             <li>
-              <Link href="/">Home</Link>
+              <Link className="" href="/">Home</Link>
             </li>
             <li>
               <Link href="/store">Store</Link>

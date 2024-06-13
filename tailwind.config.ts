@@ -30,6 +30,17 @@ const config: Config = {
           DEFAULT: '#0F1020',
         }
       },
+      fontFamily: {
+        alfredinoSemirounded: ['AlfredinoSemirounded', 'sans-serif'],
+        alfredinoTuttocurvy: ['AlfredinoTuttocurvy', 'sans-serif'],
+        alfredinoSemimono: ['AlfredinoSemimono', 'monospace'],
+        satoshi: ['Satoshi', 'sans-serif'],
+        satoshiItalic: ['SatoshiItalic', 'italic'],
+      },
+      transitionTimingFunction: {
+        'in-expo': 'cubic-bezier(0.19, 1, 0.22, 1)',
+        'out-expo': 'cubic-bezier(0.19, 1, 0.22, 1)',
+      }
     },
   },
   plugins: [],

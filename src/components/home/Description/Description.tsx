@@ -4,7 +4,7 @@ import { PLACEHOLDER_IMAGE } from './PlaceholderImage';
 export const Description = () => {
   return (
     <section className="flex flex-col lg:flex-row justify-center gap-2 pt-10">
-      <div className="w-[500px] h-[300px] relative">
+      <div className="w-[500px] h-[300px] relative overflow-hidden">
         <Image
           src={'/images/Top.jpg'}
           alt="imagen"
