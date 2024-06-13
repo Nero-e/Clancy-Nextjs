@@ -13,6 +13,23 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        'raisin-black': {
+          DEFAULT: '#231f20',
+        },
+        'redwood': {
+          DEFAULT: '#A63D40',
+        },
+        'earth-yellow': {
+          DEFAULT: '#E9B872',
+        },
+        'bone': {
+          DEFAULT: '#D6D0C3',
+        },
+        'rich-black': {
+          DEFAULT: '#0F1020',
+        }
+      },
     },
   },
   plugins: [],
