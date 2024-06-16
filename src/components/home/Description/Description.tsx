@@ -9,7 +9,7 @@ export const Description = () => {
           src={'/images/Top.jpg'}
           alt="imagen"
           fill
-          objectFit="cover"
+          style={{objectFit:'cover'}}
           placeholder="blur"
           blurDataURL={PLACEHOLDER_IMAGE}
           className="rounded-lg"

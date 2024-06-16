@@ -1,4 +1,4 @@
-import { getProducts } from '@/services';
+import { getProducts } from '@/services/products';
 import Image from 'next/image';
 
 interface PropsProducts {
@@ -11,7 +11,7 @@ export const MainProducts = async () => {
   const products = await getProducts();
   // const { products } = await response.json();
   return (
-    <section className="flex flex-col w-full pt-2 pb-10 justify-center items-center">
+    <section className="flex flex-col w-full pt-10 pb-10 justify-center items-center">
       <h3 className=" text-bone pt-2 text-center pb-10 font-alfredinoTuttocurvy font-bold text-4xl">
         New Products released ✨
       </h3>
@@ -20,13 +20,14 @@ export const MainProducts = async () => {
           {products?.map((product: PropsProducts) => {
             const imageSrc = product.images[0].src;
             return (
-              <div className="flex flex-col justify-end bg-bone bg-opacity-50 min-w-[500px] h-[300px] relative rounded-xl">
+              <div key={product.id} className="flex flex-col justify-end bg-bone bg-opacity-50 min-w-[500px] h-[300px] relative rounded-xl">
                 <div className="absolute bottom-0 top-0 left-0 right-0 h-full w-full z-10 flex items-center justify-center">
                   <Image
                     src={imageSrc}
                     alt={product.title}
-                    layout="fill"
-                    objectFit="cover"
+                    style={{ objectFit: 'cover' }}
+                    width={500}
+                    height={300}
                     className="object-cover object-center w-full h-full rounded-lg"
                   />
                 </div>
