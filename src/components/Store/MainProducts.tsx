@@ -1,12 +1,6 @@
 import { getProducts } from '@/services/products';
 import Image from 'next/image';
 
-interface PropsProducts {
-  id: number;
-  title: string;
-  images: any;
-}
-
 export const MainProducts = async () => {
   const products = await getProducts();
   // const { products } = await response.json();
@@ -17,8 +11,8 @@ export const MainProducts = async () => {
       </h3>
       <div className="flex flex-col justify-center px-11">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-          {products?.map((product: PropsProducts) => {
-            const imageSrc = product.images[0].src;
+          {products?.map((product: ProductType) => {
+            const imageSrc = product.image;
             return (
               <div key={product.id} className="flex flex-col justify-end bg-bone bg-opacity-50 min-w-[500px] h-[300px] relative rounded-xl">
                 <div className="absolute bottom-0 top-0 left-0 right-0 h-full w-full z-10 flex items-center justify-center">

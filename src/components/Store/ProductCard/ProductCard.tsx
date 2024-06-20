@@ -12,14 +12,14 @@ export const ProductCard = ({ product }: ProductCardInterface) => {
       className=""
     >
       <article className="text-bone font-satoshi">
-        <Image
+        {product.image ? <Image
           src={product.image}
           alt={product.title}
           quality={100}
           height={320}
           width={320}
           loading="eager"
-        />
+        /> : <div>Imagen no disponible</div>}
         <div className="">
           <h3>{product.title}</h3>
         </div>

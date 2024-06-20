@@ -1,4 +1,4 @@
-import { ProductCard } from "../ProductCard/ProductCard";
+import { ProductCard } from "../ProductCard";
 
 interface ProductsWrappperProps {
   products: ProductType[];
